@@ -95,4 +95,4 @@ committed for that reason; the field takes whatever you paste at runtime.
 
 MIT — see [LICENSE](LICENSE).
 
-Written by [Your Name].
+Written by [sablelight](https://github.com/sablelight).
