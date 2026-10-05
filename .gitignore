@@ -1,0 +1,27 @@
+# .NET build output
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.userprefs
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Never commit local secrets — webhook URLs are credentials.
+# A Discord webhook URL is a full send capability for that channel.
+.env
+*.local.json
+secrets.json
