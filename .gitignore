@@ -1,27 +1,76 @@
-# .NET build output
-bin/
-obj/
-*.user
-*.suo
-.vs/
-*.userprefs
+# .NET
+# Build output
+[Bb]in/
+[Oo]bj/
+[Rr]elease/
+[Dd]ebug/
+*.exe
+*.dll
+*.pdb
+*.pdb.meta
 
-# Python
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-env/
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
 
-# Editors / OS
+# IDE
 .vscode/
 .idea/
 *.swp
+*.swo
+*~
+*.user
+*.suo
+*.userprefs
+*.sln.docstates
+
+# OS
 .DS_Store
 Thumbs.db
 
-# Never commit local secrets — webhook URLs are credentials.
-# A Discord webhook URL is a full send capability for that channel.
+# Environment
 .env
-*.local.json
-secrets.json
+.env.local
+.env.*.local
+!.env.example
+
+# Logs
+*.log
+logs/
+
+# Test results
+TestResults/
+*.trx
+*.vsp
+*.vspx
+*.sap
+*.coverage
+*.coveragexml
+coverage/
+
+# Benchmarks
+BenchmarkDotNet.Artifacts/
+
+# Generated
+*.generated.cs
+*.g.cs
+*.designer.cs
+
+# Publish
+publish/
+*.pfx
+*.p12
+
+# Rider
+.idea/
+*.sln.iml
+
+# Visual Studio
+.vs/
+*.vspx
+*.vsp
+
+# MSBuild
+*.msbuild.log
