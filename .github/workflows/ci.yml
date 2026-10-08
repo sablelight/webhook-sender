@@ -80,7 +80,7 @@ jobs:
             -o ./publish/win-x64
 
       - name: Upload binaries
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: publish
           path: publish/
