@@ -72,11 +72,12 @@ jobs:
         run: dotnet restore WebhookSender/WebhookSender.csproj
 
       # WPF is Windows-only, so only the Windows RID can be published.
-      - name: Publish (self-contained, trimmed)
+      # WPF also does not support trimming (NETSDK1168).
+      - name: Publish (self-contained)
         shell: bash
         run: |
           dotnet publish WebhookSender/WebhookSender.csproj -c Release -r win-x64 --self-contained true \
-            -p:PublishSingleFile=true -p:PublishTrimmed=true \
+            -p:PublishSingleFile=true \
             -o ./publish/win-x64
 
       - name: Upload binaries
